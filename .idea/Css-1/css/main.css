@@ -1,0 +1,67 @@
+p {
+    color: red;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+/*not isolated, inherited*/
+
+/*order */
+div p {
+    /*all: initial;*/
+    background-color: silver;
+    color: initial;
+}
+
+/*kill or reinitial*/
+article div p {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(blue 50%, yellow 50%);
+    border: 1px dashed black;
+}
+
+.text_my_name-1 {
+    color: green;
+    box-shadow: 10px 10px 4px 1px black;
+    width: 60px;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 100px;
+    border: 1px dotted brown;
+}
+
+.text-shadow {
+    text-shadow: 2px 3px 1px blue;
+}
+
+.active {
+    background: url("https://picsum.photos/200/300");
+}
+
+.circle.active {
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+    /*list-style-image:  url("https://picsum.photos/id/237/200/300");*/
+}
+
+ul li:nth-child(2) {
+    text-decoration: line-through;
+}
+
+ul li:nth-child(3) {
+    text-transform: uppercase;
+
+/*nth-child only for the same*/
+.box span:nth-of-type(4) {
+    background-color: silver;
+    color: red;
+}
+
+
