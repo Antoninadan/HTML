@@ -1,0 +1,95 @@
+/*div, p {*/
+/*border: 1px solid;*/
+/*!*display: block;*!*/
+/*width: 200px;*/
+/*}*/
+
+/*!**:not(div) {*!*/
+/*!*border: 1px solid;*!*/
+/*!*}*!*/
+
+/*span,*/
+/*a,*/
+/*i,*/
+/*strong {*/
+/*border: 1px solid;*/
+/*}*/
+
+/*ul {*/
+/*list-style: none;*/
+/*font-size: 0;*/
+/*}*/
+/*li {*/
+/*border: 1px solid;*/
+/*width: 200px;*/
+/*display: inline-block;*/
+/*font-size: initial;*/
+/*color: brown;*/
+/*vertical-align: top;*/
+/*}*/
+
+/*body {*/
+/*color: blue;*/
+/*}*/
+
+/*image {*/
+/*float: contour;*/
+/*}*/
+
+ul {
+    list-style: none;
+    background: silver url("https://picsum.photos/200") no-repeat right 20px top 0;
+    display: flow-root;
+}
+
+li {
+    float: left;
+    border: solid;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    word-break:  break-all;
+    text-align: justify;
+}
+
+/*li:before {*/
+    /*!*content: url("https://picsum.photos/200");*!*/
+    /*content: "";*/
+    /*display: block;*/
+    /*clear: both;*/
+    /*height: 2px;*/
+    /*background: brown;*/
+/*}*/
+
+/*li:after{*/
+    /*!*content: "hello2";*!*/
+    /*content: "";*/
+    /*display: block;*/
+    /*clear: both;*/
+    /*height: 2px;*/
+    /*background: brown;*/
+/*}*/
+
+/*заглушки*/
+.clear-fix:before,
+.clear-fix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1{
+    /*display: none;*/
+    opacity: .3;
+    transition: 1s;
+    color: black;
+    text-align: center;
+}
+
+h1:hover{
+    opacity: .9;
+    color: yellow;
+}
