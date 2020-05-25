@@ -1,0 +1,58 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star{
+    width: 600px;
+    height: 600px;
+    background: url("https://picsum.photos/500");
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+    display: grid;
+
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1, .09, .07, .97);
+
+    transform: scale(0.5);
+    transition: 2s;
+
+    animation-fill-mode: forwards;
+}
+
+.star-label{
+    font-size: 50px;
+    color: white;
+
+    place-self: center;
+
+    mix-blend-mode: overlay;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        opacity: 50;
+        animation-direction: alternate;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 100%;
+    }
+}
