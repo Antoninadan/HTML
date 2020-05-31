@@ -1,0 +1,49 @@
+.content {
+    /*+30*/
+    max-width: 400px;
+    /*center*/
+    margin: 0 auto;
+    padding: 0 15px;
+
+    border: 2px solid red;
+}
+
+.link {
+    font-size: 13px;
+    line-height: 16px;
+    display: inline-block;
+    font-weight: initial;
+    border-bottom: 1px solid var(--br-col);
+    color: var(--color)
+}
+
+.link.warning {
+    --color: #d42859;
+    --br-col: #ecabbd;
+}
+
+.link.disable {
+    --color: #111111;
+    --br-col: #a2a2a2;
+}
+
+
+.container{
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    padding: 30px 30px;
+
+    border: 1px solid black;
+}
+
+
+
+
+.input-label {
+   width: 338px;
+}
+
+.input-content {
+    width: 338px;
+}

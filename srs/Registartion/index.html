@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+
+        <h2>
+            <c:out value="${message}" default="Please, input your login-password!"/>
+        </h2>
+        <br>
+        <a href="/registration">Registration</a>
+        <br>
+        <form action="/user/auth" method="post">
+            <p>
+                <label class="input-label" for="login">Login:</label>
+                <input class="input-content" type="text" id="login" name="login" required/>
+            </p>
+            <p>
+                <label class="input-label" for="password">Password:</label>
+                <input class="input-content" type="password" id="password" name="password" required/>
+            </p>
+            <p>
+                <input type="submit" value="LOGIN"/>
+            </p>
+        </form>
+
+</div>
+
+</body>
+</html>
