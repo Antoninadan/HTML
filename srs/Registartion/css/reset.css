@@ -1,25 +1,25 @@
-:root {
-    --font-size: 15px;
+:root{
+    --fz:15px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: var(--font-size);
+    font-size: var(--fz);
 }
 
 *,
 *:before,
-*:after {
+*:after{
     box-sizing: inherit;
 }
 
-body {
-    margin: 0px;
-
+body{
+    margin: 0;
 }
 
 a{
     text-decoration: none;
     color: inherit;
 }
+
 ul{
     margin: 0;
     padding: 0;
